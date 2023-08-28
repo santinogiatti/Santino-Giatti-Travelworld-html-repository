@@ -1,0 +1,452 @@
+@import url(https://fonts.google.com/)
+  
+   {margin: 0;
+   padding: 0;}
+
+
+body{
+    font-family: Arial, Helvetica;
+background: #a0d8e6;
+    background-size: 100%;
+    
+}
+h2{
+    
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    margin: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+   list-style: none;  
+   padding: 0;
+   width: 100%;
+   max-width: 1000px;
+   margin: 0;
+   display: flex;
+   
+}
+.menu li a{
+    text-decoration: none;
+color: rgb(255, 255, 255);
+ padding: 20px;
+ display:block;
+ 
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+}
+.menu li a:hover{
+    transition: 0.3s ease-in-out;
+    background-color: #9409ca;
+}
+
+.logo img{
+    width: 75px;
+}
+
+
+.logo h2{
+    color: rgb(0, 0, 0);
+   
+}
+header a{
+    display: flex;
+}
+.logo img :hover{
+    background-color: bisque;
+}
+.vuelos{
+    height: 200px;
+}
+.vuelos h2{
+    margin-top: 5px;
+    padding-left: 200px;
+}
+
+.brasil{
+    display: flex;
+    margin: 10px;
+}
+.brasil_img{
+    display: flex; 
+}
+h1{
+    text-align: left;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+div.pie{
+    text-align: center;
+}
+.galeria{
+    background-color: rgb(41, 182, 158);
+}
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: #360b21;
+}
+.pie-pagina .grupo-1{
+  
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 35px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 90px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #fff;
+}
+.formulario .control [type=text] :focus{
+ background-color: aliceblue;
+}
+.size{
+    height: 300px;
+    width: 400px;
+  margin: auto;
+}
+.container{
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 50px;
+    margin: 10px;
+    background-image: url(../imagenes/bandera-de-brasil-2.webp);
+    background-size: 100%;
+}
+.cards{
+    background: rgb(163, 217, 182);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+.nombre-empresa{
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cards {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 290px; 
+}
+
+.size {
+    width: 100%;
+    height: auto;
+    max-height: 150px; 
+}
+
+.pcards {
+    margin-top: 10px;
+}
+
+.flight-menu {
+    
+    color: white;
+    padding: 10px 0;
+}
+
+.flight-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.flight-menu li {
+    margin: 0 20px;
+}
+
+.flight-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.flight-menu a:hover {
+    color: #9409ca; 
+}
+/* formulario de contacto */
+.contact-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgb(163, 217, 182);
+    margin-bottom: 250px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input
+input,
+textarea {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #9409ca;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5a0556; 
+}
+/* formulario registrate */
+.container-reg {
+    margin: 50px;
+    border: 1px solid #ccc;
+    background-color: rgb(163, 217, 182);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin-bottom: 250px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #7438a5;
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: ;
+}
+.medio{
+    display: flex;
+    justify-content: center;
+}
+/* carousel */
+
+.carousel-container {
+    border-radius: 10px;
+    
+    max-width: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .carousel {
+    display: flex;
+    animation: slide 18s linear infinite alternate;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+  .ul-viajá {
+    margin-right: 350px;
+    font-family: Arial, sans-serif;
+   
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+
+   /* cartelera */
+   
+   .container-3 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-left: 350px;
+  }
+ 
+  
+  .destino {
+    margin-bottom: 20px;
+  }
+  
+  .destino img {
+    height: 250px;
+    width: 350px;
+    border-radius: 5px;
+  }
+  
+  .destino h3 {
+    margin-top: 10px;
+  }
+
+.container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cartelera {
+  margin-right: 350px;
+  display: flex;
+  gap: 20px;
+
+}
+
+.destino {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.1s ease;
+}
+
+.destino img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.destino h3 {
+  margin-top: 10px;
+}
+
+.destino p {
+  color: #666;
+}
+
+  .destino:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .a-destino {
+    color: #000000;
+    text-decoration: none; 
+  }
+  
+  .container-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .destino {
+    flex-basis: 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+  }
+  
+/* media query */  
+@media screen and (max-width: 768px) {
+    .container-3 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .destino {
+      flex-basis: 100%;
+      margin: 10px 0;
+    }
+  }
