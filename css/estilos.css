@@ -6,13 +6,8 @@
 
 body{
     font-family: Arial, Helvetica;
-background: #a0d8e6;
-    background-size: 100%;
-    
 }
-h2{
-    
-}
+
 a{
     text-decoration: none;
 }
@@ -21,31 +16,49 @@ header{
     margin: 7px;
     display: flex;
     justify-content: space-between;
+    
 }
+
 .menu{
    list-style: none;  
    padding: 0;
    width: 100%;
    max-width: 1000px;
    margin: 0;
+   text-align: center;
    display: flex;
-   
 }
+
 .menu li a{
     text-decoration: none;
-color: rgb(255, 255, 255);
- padding: 20px;
- display:block;
- 
+    color: rgb(0, 0, 0);
+    padding: 20px;
 }
-.menu li{
+
+.barranav{
     display: inline-block;
-    text-align: center;
-    
 }
-.menu li a:hover{
+
+
+.barranav li a:hover{
     transition: 0.3s ease-in-out;
-    background-color: #9409ca;
+    background-color: #b457da;
+    border-radius: 12px;
+}
+
+
+
+.vuelos-brasil{
+    margin-top: 65px;
+    margin-bottom: 90px;
+    background-image: url(../imagenes/PuntaSal.webp);
+    background-size: 100%;
+    padding: 90px;
+}
+
+
+.flight-menu li a{
+color: black;
 }
 
 .logo img{
@@ -91,13 +104,14 @@ div.pie{
     background-color: rgb(41, 182, 158);
 }
 
+/* footer */
 
 .pie-pagina{
     width: 100%;
     background-color: #360b21;
+    margin-top: 100px;
 }
-.pie-pagina .grupo-1{
-  
+.pie-pagina .grupo-1{ 
     width: 100%;
     max-width: 1000px;
     margin: auto;
@@ -106,6 +120,7 @@ div.pie{
     grid-gap: 50px;
     padding: 35px 0px;
 }
+
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
     height: 100%;
@@ -113,33 +128,42 @@ div.pie{
     justify-content: center;
     align-items: center;
 }
+
 .pie-pagina .grupo-1 .box figure img{
     width: 90px;
 }
+
 .pie-pagina .grupo-1 .box h2{
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
+
 .pie-pagina .grupo-1 .box p{
     color: #fff;
 }
+
 .formulario .control [type=text] :focus{
  background-color: aliceblue;
 }
+
 .size{
     height: 300px;
     width: 400px;
   margin: auto;
 }
+
+ /* cartelera */
+
 .container{
     flex-wrap: wrap;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 50px;
-    margin: 10px;
-    background-image: url(../imagenes/bandera-de-brasil-2.webp);
+    background-color: #360b21;
     background-size: 100%;
+    border-radius: 15px;
+    margin-bottom: 40px;
 }
 .cards{
     background: rgb(163, 217, 182);
@@ -148,6 +172,16 @@ div.pie{
     align-items: center;
     border-radius: 15px;
     padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 290px; 
+}
+.cards:hover{
+  transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .nombre-empresa{
     text-decoration: none;
@@ -160,14 +194,6 @@ div.pie{
     padding: 20px;
 }
 
-.cards {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    max-width: 290px; 
-}
-
 .size {
     width: 100%;
     height: auto;
@@ -178,36 +204,8 @@ div.pie{
     margin-top: 10px;
 }
 
-.flight-menu {
-    
-    color: white;
-    padding: 10px 0;
-}
-
-.flight-menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.flight-menu li {
-    margin: 0 20px;
-}
-
-.flight-menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
-}
-
-.flight-menu a:hover {
-    color: #9409ca; 
-}
 /* formulario de contacto */
+
 .contact-form {
     max-width: 400px;
     margin: 50px auto;
@@ -217,7 +215,11 @@ div.pie{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: rgb(163, 217, 182);
-    margin-bottom: 250px;
+    margin-bottom: 115px;
+}
+
+.div-consulta-contacto{
+    margin-bottom: 12px;
 }
 
 h2 {
@@ -242,7 +244,6 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 3px;
     outline: none;
-    
 }
 
 button {
@@ -258,17 +259,24 @@ button {
 button:hover {
     background-color: #5a0556; 
 }
+
 /* formulario registrate */
+
 .container-reg {
-    margin: 50px;
+    margin: 50px auto;
     border: 1px solid #ccc;
     background-color: rgb(163, 217, 182);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     width: 400px;
-    margin-bottom: 250px;
+    margin-bottom: 115px;
 }
+
+.contrasena-registro{
+    margin: 12px;
+}
+
 
 h1 {
     text-align: center;
@@ -307,146 +315,107 @@ button {
 button:hover {
     background-color: ;
 }
+
 .medio{
     display: flex;
     justify-content: center;
 }
-/* carousel */
 
-.carousel-container {
-    border-radius: 10px;
-    
-    max-width: 350px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 60px;
-    margin-top: 60px;
-  }
-
-  .carousel {
-    display: flex;
-    animation: slide 18s linear infinite alternate;
-  }
-
-  .carousel-item {
-    flex: 0 0 100%;
-  }
-
-  .carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-300%);
-    }
-  }
   .ul-viajá {
     margin-right: 350px;
     font-family: Arial, sans-serif;
    
     padding: 20px;
-    border-radius: 10px;
-  
+    border-radius: 10px; 
   }
 
-   /* cartelera */
-   
-   .container-3 {
+  /* grid */
+
+.img-grid{
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    margin-left: 350px;
-  }
+    justify-content: end;
+}
+
+.container-grid{
+    margin-right: 270px;
+}
+
+
+/* nosotros pag*/
+
+
+
  
-  
-  .destino {
-    margin-bottom: 20px;
-  }
-  
-  .destino img {
-    height: 250px;
-    width: 350px;
-    border-radius: 5px;
-  }
-  
-  .destino h3 {
-    margin-top: 10px;
-  }
+/* media */   
 
-.container-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+@media(max-width:720px){
+
+    .barranav ul{
+        display: flex;
+        flex-direction: column;        
+    } 
+
+    .header{ 
+        justify-content: center;      
+    } 
+
+    .container-grid{
+        margin-right: 0;
+    }
+
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr ; 
+        justify-content: center;
+        text-align: center;
+    }
+        
+    .vuelos-brasil{
+        background-size: 128%;
+    } 
+
+    .header{
+        display: grid;
+    }
+
 }
 
-.cartelera {
-  margin-right: 350px;
-  display: flex;
-  gap: 20px;
+/* nosotros pag */
 
+.container-nosotros {
+    background-image: url(../imagenes/fly\ jej.webp);
+    background-size: 100%;
+    padding: 120px 0;
+    margin: 75px;
+    border-radius: 15px;
 }
 
-.destino {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.1s ease;
-}
-
-.destino img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.destino h3 {
-  margin-top: 10px;
-}
-
-.destino p {
-  color: #666;
-}
-
-  .destino:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .a-destino {
-    color: #000000;
-    text-decoration: none; 
-  }
-  
-  .container-3 {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .destino {
-    flex-basis: 30%;
+.container-nosotros-2{
+    flex-wrap: wrap;
+    display: grid;
+    gap: 50px;
+    background-color: rgb(163, 217, 182);
+    border-radius: 15px;  
     padding: 20px;
-    border: 1px solid #ddd;
-    margin: 10px;
-  }
-  
-/* media query */  
-@media screen and (max-width: 768px) {
-    .container-3 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .destino {
-      flex-basis: 100%;
-      margin: 10px 0;
-    }
-  }
+    margin: 75px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 160px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #117a8b;
+    border-color: #117a8b;
+}
