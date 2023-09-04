@@ -16,6 +16,7 @@ header{
     margin: 7px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .menu{
@@ -42,8 +43,19 @@ header{
 .barranav li a:hover{
     transition: 0.3s ease-in-out;
     background-color: #b457da;
-    border-radius: 25px;
+    border-radius: 12px;
 }
+
+
+
+.vuelos-brasil{
+    margin-top: 65px;
+    margin-bottom: 90px;
+    background-image: url(../imagenes/PuntaSal.webp);
+    background-size: 100%;
+    padding: 90px;
+}
+
 
 .flight-menu li a{
 color: black;
@@ -148,7 +160,6 @@ div.pie{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 50px;
-    margin: 10px;
     background-color: #360b21;
     background-size: 100%;
     border-radius: 15px;
@@ -193,40 +204,8 @@ div.pie{
     margin-top: 10px;
 }
 
-/* flight menu */
-
-.flight-menu {
-    
-    color: white;
-    padding: 10px 0;
-}
-
-.flight-menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.flight-menu li {
-    margin: 0 20px;
-}
-
-.flight-menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
-}
-
-.flight-menu a:hover {
-    color: #9409ca; 
-    transform: scale(1.05);
-}
-
 /* formulario de contacto */
+
 .contact-form {
     max-width: 400px;
     margin: 50px auto;
@@ -236,7 +215,11 @@ div.pie{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: rgb(163, 217, 182);
-    margin-bottom: 250px;
+    margin-bottom: 115px;
+}
+
+.div-consulta-contacto{
+    margin-bottom: 12px;
 }
 
 h2 {
@@ -276,18 +259,24 @@ button {
 button:hover {
     background-color: #5a0556; 
 }
+
 /* formulario registrate */
+
 .container-reg {
-    margin: 50px;
-    margin-top: 120px;
+    margin: 50px auto;
     border: 1px solid #ccc;
     background-color: rgb(163, 217, 182);
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     width: 400px;
-    margin-bottom: 135px;
+    margin-bottom: 115px;
 }
+
+.contrasena-registro{
+    margin: 12px;
+}
+
 
 h1 {
     text-align: center;
@@ -331,6 +320,7 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+
   .ul-viajá {
     margin-right: 350px;
     font-family: Arial, sans-serif;
@@ -341,27 +331,91 @@ button:hover {
 
   /* grid */
 
-.container-grid{
-    margin-right: 287px;
-}
-
 .img-grid{
     display: flex;
     justify-content: end;
 }
 
+.container-grid{
+    margin-right: 270px;
+}
+
+
+/* nosotros pag*/
+
+
+
  
 /* media */   
 
-@media(max-width:425px){
+@media(max-width:720px){
+
     .barranav ul{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;        
     } 
+
     .header{ 
-        display: contents;
-        
+        justify-content: center;      
     } 
-    
+
+    .container-grid{
+        margin-right: 0;
+    }
+
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr ; 
+        justify-content: center;
+        text-align: center;
+    }
+        
+    .vuelos-brasil{
+        background-size: 128%;
+    } 
+
+    .header{
+        display: grid;
+    }
+
+}
+
+/* nosotros pag */
+
+.container-nosotros {
+    background-image: url(../imagenes/fly\ jej.webp);
+    background-size: 100%;
+    padding: 120px 0;
+    margin: 75px;
+    border-radius: 15px;
+}
+
+.container-nosotros-2{
+    flex-wrap: wrap;
+    display: grid;
+    gap: 50px;
+    background-color: rgb(163, 217, 182);
+    border-radius: 15px;  
+    padding: 20px;
+    margin: 75px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 160px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #117a8b;
+    border-color: #117a8b;
 }
