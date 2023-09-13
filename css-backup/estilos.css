@@ -4,7 +4,7 @@
    padding: 0;}
 
 
-body{
+   body{
     font-family: Arial, Helvetica;
 }
 
@@ -57,9 +57,7 @@ header{
 }
 
 
-.flight-menu li a{
-color: black;
-}
+
 
 .logo img{
     width: 75px;
@@ -312,10 +310,6 @@ button {
     transition: 0.3s ease-in-out;
 }
 
-button:hover {
-    background-color: ;
-}
-
 .medio{
     display: flex;
     justify-content: center;
@@ -340,12 +334,6 @@ button:hover {
     margin-right: 270px;
 }
 
-
-/* nosotros pag*/
-
-
-
- 
 /* media */   
 
 @media(max-width:720px){

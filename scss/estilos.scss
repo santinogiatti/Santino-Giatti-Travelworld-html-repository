@@ -1,54 +1,54 @@
-@import url(https://fonts.google.com/)
-  
-   {margin: 0;
-   padding: 0;}
+@import url('https://fonts.google.com/');
 
+$primary-color: #007bff;
+$secondary-color: #17a2b8;
+$text-color: rgb(0, 0, 0);
 
-   body{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Arial, Helvetica;
-}
-
-a{
-    text-decoration: none;
-}
-
-header{
-    margin: 7px;
-    display: flex;
-    justify-content: space-between;
     
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        margin: 7px;
+        display: flex;
+        justify-content: space-between;
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0;
+            text-align: center;
+            display: flex;
+
+            li a {
+                text-decoration: none;
+                color: $text-color;
+                padding: 20px;
+            }
+        }
+
+        .barranav {
+            display: inline-block;
+            li a:hover {
+                transition: 0.3s ease-in-out;
+                background-color: #b457da;
+                border-radius: 12px;
+            }
+        }
+    }
 }
 
-.menu{
-   list-style: none;  
-   padding: 0;
-   width: 100%;
-   max-width: 1000px;
-   margin: 0;
-   text-align: center;
-   display: flex;
-}
-
-.menu li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-}
-
-.barranav{
-    display: inline-block;
-}
-
-
-.barranav li a:hover{
-    transition: 0.3s ease-in-out;
-    background-color: #b457da;
-    border-radius: 12px;
-}
-
-
-
-.vuelos-brasil{
+.vuelos-brasil {
     margin-top: 65px;
     margin-bottom: 90px;
     background-image: url(../imagenes/PuntaSal.webp);
@@ -56,116 +56,124 @@ header{
     padding: 90px;
 }
 
+.logo {
+    img {
+        width: 75px;
+    }
 
-.flight-menu li a{
-color: black;
+    h2 {
+        color: $text-color;
+    }
+
+    a {
+        display: flex;
+
+        img :hover {
+            background-color: bisque;
+        }
+    }
 }
 
-.logo img{
-    width: 75px;
-}
-
-
-.logo h2{
-    color: rgb(0, 0, 0);
-   
-}
-header a{
-    display: flex;
-}
-.logo img :hover{
-    background-color: bisque;
-}
-.vuelos{
+.vuelos {
     height: 200px;
-}
-.vuelos h2{
-    margin-top: 5px;
-    padding-left: 200px;
+
+    h2 {
+        margin-top: 5px;
+        padding-left: 200px;
+    }
 }
 
-.brasil{
+.brasil {
     display: flex;
     margin: 10px;
 }
-.brasil_img{
-    display: flex; 
+
+.brasil_img {
+    display: flex;
 }
-h1{
+
+h1 {
     text-align: left;
     margin-top: 45px;
     margin-bottom: 50px;
 }
 
-div.pie{
+div.pie {
     text-align: center;
 }
-.galeria{
+
+.galeria {
     background-color: rgb(41, 182, 158);
 }
 
 /* footer */
 
-.pie-pagina{
+.pie-pagina {
     width: 100%;
     background-color: #360b21;
     margin-top: 100px;
-}
-.pie-pagina .grupo-1{ 
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 35px 0px;
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 35px 0px;
+
+        .box {
+            figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 90px;
+                }
+            }
+
+            h2 {
+                color: #fff;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+    }
 }
 
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formulario .control {
+    [type=text] :focus {
+        background-color: aliceblue;
+    }
 }
 
-.pie-pagina .grupo-1 .box figure img{
-    width: 90px;
-}
-
-.pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie-pagina .grupo-1 .box p{
-    color: #fff;
-}
-
-.formulario .control [type=text] :focus{
- background-color: aliceblue;
-}
-
-.size{
+.size {
     height: 300px;
     width: 400px;
-  margin: auto;
+    margin: auto;
 }
 
- /* cartelera */
+/* cartelera */
 
-.container{
+.container {
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
     background-color: #360b21;
     background-size: 100%;
     border-radius: 15px;
     margin-bottom: 40px;
 }
-.cards{
+
+.cards {
     background: rgb(163, 217, 182);
     display: flex;
     flex-direction: column;
@@ -177,15 +185,18 @@ div.pie{
     padding: 10px;
     text-align: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    max-width: 290px; 
+    max-width: 290px;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
-.cards:hover{
-  transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.nombre-empresa{
+
+.nombre-empresa {
     text-decoration: none;
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -197,7 +208,7 @@ div.pie{
 .size {
     width: 100%;
     height: auto;
-    max-height: 150px; 
+    max-height: 150px;
 }
 
 .pcards {
@@ -216,48 +227,48 @@ div.pie{
     text-align: center;
     background-color: rgb(163, 217, 182);
     margin-bottom: 115px;
-}
+    
 
-.div-consulta-contacto{
-    margin-bottom: 12px;
-}
+    .div-consulta-contacto {
+        margin-bottom: 12px;
+    }
 
-h2 {
-    margin-bottom: 20px;
-}
+    h2 {
+        margin-bottom: 20px;
+    }
 
-form {
-    text-align: left;
-}
+    form {
+        text-align: left;
+    }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
 
-input
-input,
-textarea {
-    width: 80%;
-    padding: 20px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    outline: none;
-}
+    input,
+    textarea {
+        width: 80%;
+        padding: 20px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+    }
 
-button {
-    padding: 10px 20px;
-    background-color: #9409ca;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
+    button {
+        padding: 10px 20px;
+        background-color: #9409ca;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
 
-button:hover {
-    background-color: #5a0556; 
+        &:hover {
+            background-color: #5a0556;
+        }
+    }
 }
 
 /* formulario registrate */
@@ -271,102 +282,102 @@ button:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     width: 400px;
     margin-bottom: 115px;
+
+    .contrasena-registro {
+        margin: 12px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #7438a5;
+            color: #000000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #5a0556;
+            }
+        }
+    }
 }
 
-.contrasena-registro{
-    margin: 12px;
-}
-
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    margin-top: 20px;
-    background-color: #7438a5;
-    color: #000000;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s ease-in-out;
-}
-
-.medio{
+.medio {
     display: flex;
     justify-content: center;
 }
 
-  .ul-viajá {
+.ul-viajá {
     margin-right: 350px;
     font-family: Arial, sans-serif;
-   
     padding: 20px;
-    border-radius: 10px; 
-  }
+    border-radius: 10px;
+}
 
-  /* grid */
+/* grid */
 
-.img-grid{
+.img-grid {
     display: flex;
     justify-content: end;
 }
 
-.container-grid{
+.container-grid {
     margin-right: 270px;
 }
 
-/* media */   
+/* media */
 
-@media(max-width:720px){
-
-    .barranav ul{
+@media (max-width: 720px) {
+    .barranav ul {
         display: flex;
-        flex-direction: column;        
-    } 
+        flex-direction: column;
+    }
 
-    .header{ 
-        justify-content: center;      
-    } 
+    .header {
+        justify-content: center;
+    }
 
-    .container-grid{
+    .container-grid {
         margin-right: 0;
     }
 
     .pie-pagina .grupo-1 {
-        grid-template-columns: 1fr ; 
+        grid-template-columns: 1fr;
         justify-content: center;
         text-align: center;
     }
-        
-    .vuelos-brasil{
-        background-size: 128%;
-    } 
 
-    .header{
-        display: grid;
+    .vuelos-brasil {
+        background-size: 128%;
     }
 
+    .header {
+        display: grid;
+    }
 }
 
 /* nosotros pag */
@@ -379,12 +390,12 @@ button {
     border-radius: 15px;
 }
 
-.container-nosotros-2{
+.container-nosotros-2 {
     flex-wrap: wrap;
     display: grid;
     gap: 50px;
     background-color: rgb(163, 217, 182);
-    border-radius: 15px;  
+    border-radius: 15px;
     padding: 20px;
     margin: 75px;
 }
@@ -393,19 +404,24 @@ button {
     background-color: #007bff;
     border-color: #007bff;
     width: 160px;
-}
 
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    &:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
 }
 
 .btn-info {
     background-color: #17a2b8;
     border-color: #17a2b8;
+
+    &:hover {
+        background-color: #117a8b;
+        border-color: #117a8b;
+    }
 }
 
-.btn-info:hover {
-    background-color: #117a8b;
-    border-color: #117a8b;
-}
+/* contenido Promos */
+ .promos-tittle {
+    text-align: center;
+ }
