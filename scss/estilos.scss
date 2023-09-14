@@ -1,8 +1,40 @@
 @import url('https://fonts.google.com/');
 
-$primary-color: #007bff;
+// Variables
+
+$primary-color: #ffffff;
 $secondary-color: #17a2b8;
 $text-color: rgb(0, 0, 0);
+
+/* mixins */
+@mixin cont-nosotros-2 {
+    flex-wrap: wrap;
+    display: grid;
+    gap: 50px;
+    background-color: rgb(163, 217, 182);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 75px;
+  }
+
+  @mixin button-config{
+    margin-top: 20px;
+              background-color: #7438a5;
+              color: #000000;
+              padding: 10px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 16px;
+              transition: 0.3s ease-in-out;
+  
+              &:hover {
+                  background-color: #5a0556;
+              }
+  }
+
+
+  /* resto de la pag */
 
 * {
     margin: 0;
@@ -54,6 +86,10 @@ body {
     background-image: url(../imagenes/PuntaSal.webp);
     background-size: 100%;
     padding: 90px;
+
+    h1{
+        text-align: center;
+    }
 }
 
 .logo {
@@ -162,6 +198,12 @@ div.pie {
 
 /* cartelera */
 
+.vuelos-brasil{
+    h1{
+        text-align: center;
+    }
+}
+
 .container {
     flex-wrap: wrap;
     display: grid;
@@ -257,17 +299,7 @@ div.pie {
     }
 
     button {
-        padding: 10px 20px;
-        background-color: #9409ca;
-        color: white;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-
-        &:hover {
-            background-color: #5a0556;
-        }
+        @include button-config();
     }
 }
 
@@ -309,19 +341,7 @@ div.pie {
         }
 
         button {
-            margin-top: 20px;
-            background-color: #7438a5;
-            color: #000000;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: 0.3s ease-in-out;
-
-            &:hover {
-                background-color: #5a0556;
-            }
+            @include button-config();
         }
     }
 }
@@ -388,17 +408,15 @@ div.pie {
     padding: 120px 0;
     margin: 75px;
     border-radius: 15px;
+
+    h1{
+        text-align: center;
+    }
 }
 
 .container-nosotros-2 {
-    flex-wrap: wrap;
-    display: grid;
-    gap: 50px;
-    background-color: rgb(163, 217, 182);
-    border-radius: 15px;
-    padding: 20px;
-    margin: 75px;
-}
+    @include cont-nosotros-2;
+  }
 
 .btn-primary {
     background-color: #007bff;
@@ -425,3 +443,7 @@ div.pie {
  .promos-tittle {
     text-align: center;
  }
+
+ .container-nosotros-2 {
+    @include cont-nosotros-2;
+  }

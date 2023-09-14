@@ -1,0 +1,28 @@
+/* mixin para container de promos y nosotros */
+@mixin cont-nosotros-2 {
+  flex-wrap: wrap;
+  display: grid;
+  gap: 50px;
+  background-color: rgb(163, 217, 182);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 75px;
+}
+
+/* mixin para botones */
+
+@mixin button-config{
+  margin-top: 20px;
+            background-color: #7438a5;
+            color: #000000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #5a0556;
+            }
+}

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.google.com/");
+/* mixins */
+/* resto de la pag */
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +47,9 @@ body header .barranav li a:hover {
   background-image: url(../imagenes/PuntaSal.webp);
   background-size: 100%;
   padding: 90px;
+}
+.vuelos-brasil h1 {
+  text-align: center;
 }
 
 .logo img {
@@ -136,6 +141,10 @@ div.pie {
 }
 
 /* cartelera */
+.vuelos-brasil h1 {
+  text-align: center;
+}
+
 .container {
   flex-wrap: wrap;
   display: grid;
@@ -223,12 +232,14 @@ div.pie {
   outline: none;
 }
 .contact-form button {
-  padding: 10px 20px;
-  background-color: #9409ca;
-  color: white;
+  margin-top: 20px;
+  background-color: #7438a5;
+  color: #000000;
+  padding: 10px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
   transition: 0.3s ease-in-out;
 }
 .contact-form button:hover {
@@ -336,6 +347,9 @@ div.pie {
   margin: 75px;
   border-radius: 15px;
 }
+.container-nosotros h1 {
+  text-align: center;
+}
 
 .container-nosotros-2 {
   flex-wrap: wrap;
@@ -369,6 +383,16 @@ div.pie {
 /* contenido Promos */
 .promos-tittle {
   text-align: center;
+}
+
+.container-nosotros-2 {
+  flex-wrap: wrap;
+  display: grid;
+  gap: 50px;
+  background-color: rgb(163, 217, 182);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 75px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
