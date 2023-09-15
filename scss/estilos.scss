@@ -2,36 +2,12 @@
 
 // Variables
 
-$primary-color: #ffffff;
+$primary-color: rgb(163, 217, 182);
 $secondary-color: #17a2b8;
 $text-color: rgb(0, 0, 0);
 
 /* mixins */
-@mixin cont-nosotros-2 {
-    flex-wrap: wrap;
-    display: grid;
-    gap: 50px;
-    background-color: rgb(163, 217, 182);
-    border-radius: 15px;
-    padding: 20px;
-    margin: 75px;
-  }
-
-  @mixin button-config{
-    margin-top: 20px;
-              background-color: #7438a5;
-              color: #000000;
-              padding: 10px;
-              border: none;
-              border-radius: 5px;
-              cursor: pointer;
-              font-size: 16px;
-              transition: 0.3s ease-in-out;
-  
-              &:hover {
-                  background-color: #5a0556;
-              }
-  }
+@import'mixin';
 
 
   /* resto de la pag */
@@ -260,15 +236,8 @@ div.pie {
 /* formulario de contacto */
 
 .contact-form {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    background-color: rgb(163, 217, 182);
-    margin-bottom: 115px;
+    
+    @include forms-travel();
     
 
     .div-consulta-contacto {
@@ -306,14 +275,8 @@ div.pie {
 /* formulario registrate */
 
 .container-reg {
-    margin: 50px auto;
-    border: 1px solid #ccc;
-    background-color: rgb(163, 217, 182);
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    margin-bottom: 115px;
+    
+    @include forms-travel();
 
     .contrasena-registro {
         margin: 12px;
@@ -430,8 +393,8 @@ div.pie {
 }
 
 .btn-info {
-    background-color: #17a2b8;
-    border-color: #17a2b8;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
 
     &:hover {
         background-color: #117a8b;
