@@ -132,6 +132,14 @@ div.pie {
 .pie-pagina .grupo-1 .box p {
   color: #fff;
 }
+.pie-pagina .grupo-1 .box2 h2 {
+  color: rgb(163, 217, 182);
+}
+.pie-pagina .grupo-1 .box2 li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  list-style: none;
+}
 
 .formulario .control [type=text] :focus {
   background-color: aliceblue;

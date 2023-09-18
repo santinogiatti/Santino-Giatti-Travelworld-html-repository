@@ -157,6 +157,16 @@ div.pie {
                 color: #fff;
             }
         }
+        .box2{
+            h2{
+                color: $primary-color;
+            }           
+                li a {
+                    text-decoration: none;
+                    color: $text-color;
+                    list-style: none;
+                }
+        }
     }
 }
 
