@@ -157,14 +157,23 @@ div.pie {
                 color: #fff;
             }
         }
+
         .box2{
+
             h2{
                 color: $primary-color;
-            }           
+            } 
+             
+            ul{
+                list-style: none;
+            }         
                 li a {
-                    text-decoration: none;
                     color: $text-color;
-                    list-style: none;
+                }
+                li a:hover {
+                    transition: 0.3s ease-in-out;
+                    background-color: #b457da;
+                    border-radius: 8px;
                 }
         }
     }
