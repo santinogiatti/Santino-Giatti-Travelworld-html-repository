@@ -45,11 +45,11 @@ body header .barranav li a:hover {
 }
 
 .vuelos-brasil {
-  margin-top: 65px;
-  margin-bottom: 90px;
-  background-image: url(../imagenes/PuntaSal.webp);
+  margin-top: 0px;
+  margin-bottom: 40px;
   background-size: 100%;
   padding: 90px;
+  position: ab;
 }
 .vuelos-brasil h1 {
   text-align: center;
@@ -139,7 +139,7 @@ div.pie {
   list-style: none;
 }
 .pie-pagina .grupo-1 .box2 li a {
-  color: rgb(0, 0, 0);
+  color: white;
 }
 .pie-pagina .grupo-1 .box2 li a:hover {
   transition: 0.3s ease-in-out;
@@ -357,16 +357,36 @@ div.pie {
     display: grid;
   }
 }
+@media (min-width: 1440px) {
+  .container-reg {
+    margin-top: 153px;
+    margin-bottom: 200px;
+  }
+  .contact-form {
+    margin-top: 153px;
+    margin-bottom: 200px;
+  }
+}
 /* nosotros pag */
 .container-nosotros {
-  background-image: url(../imagenes/fly\ jej.webp);
-  background-size: 100%;
+  position: relative;
   padding: 120px 0;
   margin: 75px;
   border-radius: 15px;
 }
 .container-nosotros h1 {
   text-align: center;
+}
+.container-nosotros .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.3;
+  border-radius: 10px;
 }
 
 .container-nosotros-2 {
