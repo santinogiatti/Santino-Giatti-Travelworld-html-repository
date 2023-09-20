@@ -18,8 +18,8 @@ $text-color: rgb(0, 0, 0);
 }
 
 body {
-    font-family: Arial, Helvetica;
-    
+    font-family: Arial, Helvetica; 
+    background-color: #444242;
     a {
         text-decoration: none;
     }
@@ -391,6 +391,10 @@ div.pie {
   }
   .contact-form{
     margin-top: 153px;
+    margin-bottom: 200px;
+  }
+  .promos-tittle{
+    margin-top: 95px;
     margin-bottom: 200px;
   }
 }
