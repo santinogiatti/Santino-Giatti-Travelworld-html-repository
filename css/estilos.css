@@ -292,6 +292,7 @@ div.pie {
 }
 .contact-form button:hover {
   background-color: #5a0556;
+  color: white;
 }
 
 /* formulario registrate */
@@ -340,6 +341,7 @@ div.pie {
 }
 .container-reg form button:hover {
   background-color: #5a0556;
+  color: white;
 }
 
 .medio {

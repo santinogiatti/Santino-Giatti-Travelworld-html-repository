@@ -39,7 +39,7 @@
   
     <div class="contact-form">
       <h2>CONTACTO</h2>
-      <form name="formulario"  netlify>
+      <form name="formulario" action="enviar.php">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required>
           
@@ -53,8 +53,11 @@
             <label for="consulta">Consulta:</label>
             <textarea id="consulta" name="consulta" rows="4" required></textarea>
           </div>
-          
-          <button type="submit">Enviar</button>
+
+          <a href="#">
+              <button type="submit">Realizar consulta</button>
+          </a>
+
       </form>
       <div class="red-social">
         <a href="#" class="fa fa-facebook"></a>
