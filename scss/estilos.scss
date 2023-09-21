@@ -4,6 +4,7 @@
 
 $primary-color: rgb(163, 217, 182);
 $secondary-color: #17a2b8;
+$tercer-color: #3a1a5e ;
 $text-color: rgb(0, 0, 0);
 
 /* mixins */
@@ -19,7 +20,6 @@ $text-color: rgb(0, 0, 0);
 
 body {
     font-family: Arial, Helvetica; 
-    background-color: #444242;
     a {
         text-decoration: none;
     }
@@ -28,7 +28,16 @@ body {
         margin: 7px;
         display: flex;
         justify-content: space-between;
+        background-color: #4197a5;   
+        border-radius: 10px;
+        
+        .leon{
+            border-radius: 27px;
+        }
+        
 
+
+        
         .menu {
             list-style: none;
             padding: 0;
@@ -48,26 +57,17 @@ body {
         .barranav {
             display: inline-block;
             li a:hover {
-                transition: 0.3s ease-in-out;
-                background-color: #b457da;
+                transition: 0.2s ease-in-out;
+                background-color: $tercer-color;
                 border-radius: 12px;
+                color: #fff;
+                
             }
         }
     }
 }
 
-.vuelos-brasil {
-    margin-top: 0px;
-    margin-bottom: 40px;
-    background-size: 100%;
-    padding: 90px;
-    position: ab;
 
-    h1{
-        text-align: center;
-    }
-
-}
 
 .logo {
     img {
@@ -123,8 +123,9 @@ div.pie {
 
 .pie-pagina {
     width: 100%;
-    background-color: #360b21;
+    background-color: $tercer-color;
     margin-top: 100px;
+    margin-top: 150px;
 
     .grupo-1 {
         width: 100%;
@@ -145,6 +146,7 @@ div.pie {
 
                 img {
                     width: 90px;
+                    border-radius: 27px;
                 }
             }
 
@@ -157,6 +159,7 @@ div.pie {
             p {
                 color: #fff;
             }
+
         }
 
         .box2{
@@ -172,9 +175,8 @@ div.pie {
                     color: white;
                 }
                 li a:hover {
-                    transition: 0.3s ease-in-out;
-                    background-color: #b457da;
-                    border-radius: 8px;
+                    transition: 0.2s ease-in-out;
+                    color: black;
                 }
         }
     }
@@ -194,18 +196,20 @@ div.pie {
 
 /* cartelera */
 
-.vuelos-brasil{
+.vuelos-brasil {
+    margin-top: 0px;
+    margin-bottom: 90px;
     h1{
         text-align: center;
     }
-}
 
+}
 .container {
     flex-wrap: wrap;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    background-color: #360b21;
+    background-color: $tercer-color;
     background-size: 100%;
     border-radius: 15px;
     margin-bottom: 40px;
@@ -251,6 +255,46 @@ div.pie {
 
 .pcards {
     margin-top: 10px;
+}
+
+/* acordion */
+
+.acordion {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .acordion-titulo {
+        background-color: #f4f4f4;
+        padding: 10px;
+        display: block;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-weight: bold;
+
+    &:hover{
+       color: #b457da; 
+       transform: scale(1.01);    
+    }
+    }
+    
+    .acordion-content {
+        display: none;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked + .acordion-titulo + .acordion-content {
+        display: block;
+    }
+
 }
 
 /* formulario de contacto */

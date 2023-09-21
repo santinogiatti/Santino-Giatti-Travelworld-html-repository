@@ -58,7 +58,7 @@
 </div>
 <!-- cartelera mundo -->
 
-<div class="container">
+<div class="container" id="cards">
 
   <div class="cards" >
     <img src="./imagenes/aerial-view-of-rio-de-janeiro.webp" class="size" alt="...">
@@ -124,13 +124,31 @@
 </div>
 
 </div>
-<!-- grid -->
+
+<!-- acordion -->
+
+<div class="acordion">
+  <input type="checkbox" id="section1">
+  <label for="section1" class="acordion-titulo ">Como Reservar</label>
+  <div class="acordion-content">
+      <p>Para reservar un viaje debes contactarte con nosotros y presentar una forma de pago Aceptada. <a href="./pages/contacto.html">contactanos</a> o via <a href="https://api.whatsapp.com/send?phone=1130523624" class="fa fa-whatsapp"></a></p>
+  </div>
+  
+  <input type="checkbox" id="section2">
+  <label for="section2" class="acordion-titulo ">Formas de pago</label>
+  <div class="acordion-content">
+      <p>Contamos con dos formas de pago: a través de depósito/transferencia bancaria, con la cual obtenés el precio especial, o bien, a través de los métodos Pago mi viaje (Visa o MasterCard) o MercadoPago (Tarjetas online, PagoFácil y RapiPago) con los cuales podés abonar en cuotas, al precio de lista.</p>
+  </div>
+  
+  <input type="checkbox" id="section3">
+  <label for="section3" class="acordion-titulo ">Promos y Descuentos</label>
+  <div class="acordion-content">
+      <p>Averigua mas sobre nuestras promos y descuentos vigentes en <a href="./pages/promos.html">Promos</a></p>
+  </div>
+</div>
 
 
-      
- 
 
- 
 <!-- footer -->
 
   <footer class="pie-pagina">
@@ -153,7 +171,7 @@
             <h2>SIGUENOS</h2>
             <div class="red-social">
                 <a href="#" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/franco_ditale/" class="fa fa-instagram"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-youtube"></a>
             </div>
@@ -161,7 +179,7 @@
         <div class="box2">
           <h2>ENLACES RÁPIDOS</h2>
           <ul>
-              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="#cards">Inicio</a></li>
               <li><a href="./pages/registrate.html">Registro</a></li>
               <li><a href="./pages/contacto.html">Contacto</a></li>
               <li><a href="./pages/promos.html">Promos</a></li>
