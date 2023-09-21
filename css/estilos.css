@@ -20,8 +20,6 @@ body header {
   margin: 7px;
   display: flex;
   justify-content: space-between;
-  background-color: #4197a5;
-  border-radius: 10px;
 }
 body header .leon {
   border-radius: 27px;
