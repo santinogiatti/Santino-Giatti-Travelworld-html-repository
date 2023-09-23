@@ -217,6 +217,8 @@ div.pie {
     background-size: 100%;
     border-radius: 15px;
     margin-bottom: 40px;
+
+    
 }
 
 .cards {
@@ -236,6 +238,10 @@ div.pie {
     &:hover {
         transform: scale(1.05);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    button {
+        @include button-config();
     }
 }
 
@@ -455,10 +461,14 @@ div.pie {
 
 .container-nosotros {
     position: relative;
-    padding: 120px 0;
+    padding: 60px 0;
     margin: 75px;
     border-radius: 15px;
 
+    .img-ubi{
+        display: flex;
+        justify-content: center;
+    } 
 
     h1{
         text-align: center;
@@ -501,6 +511,8 @@ div.pie {
         border-color: #117a8b;
     }
 }
+
+
 
 /* contenido Promos */
  .promos-tittle {

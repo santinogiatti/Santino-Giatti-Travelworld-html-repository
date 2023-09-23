@@ -191,6 +191,21 @@ div.pie {
   transform: scale(1.05);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+.cards button {
+  margin-top: 20px;
+  background-color: #a14be2;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+.cards button:hover {
+  background-color: #5a0556;
+  color: white;
+}
 
 .nombre-empresa {
   text-decoration: none;
@@ -283,7 +298,7 @@ div.pie {
 }
 .contact-form button {
   margin-top: 20px;
-  background-color: #7438a5;
+  background-color: #a14be2;
   color: #000000;
   padding: 10px;
   border: none;
@@ -332,7 +347,7 @@ div.pie {
 }
 .container-reg form button {
   margin-top: 20px;
-  background-color: #7438a5;
+  background-color: #a14be2;
   color: #000000;
   padding: 10px;
   border: none;
@@ -412,9 +427,13 @@ div.pie {
 /* nosotros pag */
 .container-nosotros {
   position: relative;
-  padding: 120px 0;
+  padding: 60px 0;
   margin: 75px;
   border-radius: 15px;
+}
+.container-nosotros .img-ubi {
+  display: flex;
+  justify-content: center;
 }
 .container-nosotros h1 {
   text-align: center;
