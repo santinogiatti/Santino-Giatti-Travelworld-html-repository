@@ -131,9 +131,14 @@ div.pie {
 }
 .pie-pagina .grupo-1 .box2 h2 {
   color: rgb(163, 217, 182);
+  justify-content: center;
+  text-align: center;
 }
 .pie-pagina .grupo-1 .box2 ul {
   list-style: none;
+  justify-content: center;
+  text-align: center;
+  margin-right: 35px;
 }
 .pie-pagina .grupo-1 .box2 li a {
   color: white;

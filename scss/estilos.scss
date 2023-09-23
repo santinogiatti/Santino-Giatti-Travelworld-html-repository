@@ -164,10 +164,15 @@ div.pie {
 
             h2{
                 color: $primary-color;
+                justify-content: center;
+                text-align: center;
             } 
              
             ul{
                 list-style: none;
+                justify-content: center;
+                text-align: center;
+                margin-right: 35px;
             }         
                 li a {
                     color: white;
