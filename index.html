@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viajes" content="html, travel, viajes, js, mundo">
-    <meta name="travel" content="viajes al rededor del mundo a un bajo costo, con mucha seguridad en el pago">
+    <meta name="travel" content="Viajes alrededor del mundo a un bajo costo, Con mucha seguridad en el pago">
     <link rel="stylesheet" href="./css/estilos.css">
 <link rel="shortcut icon" href="./imagenes/leonsin.png">
 <script src="https://kit.fontawesome.com/4db3f232fb.js"></script>
@@ -13,16 +13,21 @@
 </head>
 <body>
 <!-- barra nav -->
-    <header class="header">
-        <a href="./index.html" class="logo">
-            <div class="leon">
-                <img loading="lazy" src="./imagenes/leonsin.png" alt="logo de la compañia">
-            </div>
-            <div class="nombre-empresa">
 
-              <h2 class="nombre-empresa">Travelworld</h2>
-            </div>
-        </a>
+    <header class="header">
+      
+      <div class="logo-nombre">
+        <a href="./index.html" class="logo">
+          <div class="leon">
+              <img loading="lazy" src="./imagenes/leonsin.png" alt="logo de la compañia">
+          </div>
+          <div class="nombre-empresa">
+
+            <h2 class="nombre-empresa">Travelworld</h2>
+          </div>
+      </a>
+      </div>
+        
 
 <!-- barra navegacion -->
 
@@ -30,19 +35,19 @@
         <nav class="barranav">
 
           <ul class="menu">
-            <li class="nav-item active">
+            <li class="nav-item active current">
               <a class="nav-link" href="./index.html"><strong>Inicio</strong></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active current">
               <a class="nav-link" href="./pages/registrate.html"><strong>Registrate</strong></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active current">
               <a class="nav-link" href="./pages/contacto.html"><strong>Contacto</strong></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active current">
               <a class="nav-link" href="./pages/promos.html"><strong>Promos</strong></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active current">
               <a class="nav-link" href="./pages/nosotros.html"><strong>Nosotros</strong></a>
             </li>
           </ul>
@@ -56,7 +61,7 @@
 
     <div class="container-nosotros text-center">
       <video muted autoplay loop playbackRate="0.5" loading="lazy" class="video-background">
-          <source src="../imagenes/videoplayback.mp4" type="video/mp4" alt="tu buscador no soporta html 5">
+          <source src="./imagenes/videoplayback-op.webm" type="video/mp4" alt="tu buscador no soporta html 5">
       </video>
       <h1>Bienvenido a Tu Empresa de Viajes</h1>
       <p><strong>
@@ -80,7 +85,7 @@
   </div>
 
   <div class="cards">
-   <img loading="lazy" src="./imagenes/55147-Sao-Paulo.webp" class="size" alt="...">
+   <img loading="lazy" src="./imagenes/55147-Sao-Paulo.webp" class="size" alt="sao paulo-img">
    <div class="pcards">
      <h5 class="card-title">Sao Paulo</h5>
      <p class="card-text">São Paulo​ o San Pablo,​ oficialmente denominada Município de São Paulo, es la ciudad más poblada de Brasil y de todo el continente americano</p>
@@ -89,7 +94,7 @@
  </div>
 
  <div class="cards"">
-   <img loading="lazy" src="./imagenes/pousadas-praia-do-rosa-sc.webp" class="size" alt="...">
+   <img loading="lazy" src="./imagenes/pousadas-praia-do-rosa-sc.webp" class="size" alt="praia do rosa-img">
    <div class="pcards">
      <h5 class="card-title">Praia do Rosa</h5>
      <p class="card-text">fundada como São Sebastião do Rio de Janeiro,​ es una ciudad, municipio brasileño y capital del estado homónimo, ubicada en el sureste del país.</p>
@@ -98,7 +103,7 @@
  </div>
 
  <div class="cards">
-   <img loading="lazy" src="./imagenes/tour-buggy-buzios-list.webp" class="size" alt="...">
+   <img loading="lazy" src="./imagenes/tour-buggy-buzios-list.webp" class="size" alt="buzios-img">
    <div class="pcards">
      <h5 class="card-title">Buzios</h5>
      <p class="card-text">fundada como São Sebastião do Rio de Janeiro,​ es una ciudad, municipio brasileño y capital del estado homónimo, ubicada en el sureste del país.</p>
@@ -107,7 +112,7 @@
  </div>
 
  <div class="cards">
-  <img loading="lazy" src="./imagenes/taipei-taiwan.webp" class="size" alt="...">
+  <img loading="lazy" src="./imagenes/taipei-taiwan.webp" class="size" alt="taipei taiwan-img">
   <div class="pcards">
     <h5 class="card-title">Taipei Taiwan</h5>
     <p class="card-text"> La ciudad tiene un metro elevado y está conectada por tren de alta velocidad con Kaohsiung. Además es sede de varias universidades, el Museo Nacional del Palacio y otras instituciones culturales como la Academia Sínica, y el Taipei 101, el undécimo edificio más alto del mundo.</p>
@@ -116,7 +121,7 @@
 </div>
 
 <div class="cards">
-  <img loading="lazy" src="./imagenes/speicherstadt-alemania.webp" class="size" alt="...">
+  <img loading="lazy" src="./imagenes/speicherstadt-alemania.webp" class="size" alt="speicherstadt alemania-img">
   <div class="pcards">
     <h5 class="card-title">Alemania speicherstadt</h5>
     <p class="card-text">situado en Hamburgo, Alemania, es el barrio de almacenes con pilotes de madera más grande del mundo. Se sitúa en el Puerto de Hamburgo, dentro de HafenCity, y se construyó entre 1883 y 1927.</p>
@@ -125,11 +130,11 @@
 </div>
 
 <div class="cards">
-  <img loading="lazy" src="./imagenes/PuntaSal.webp" class="size" alt="...">
+  <img loading="lazy" src="./imagenes/PuntaSal.webp" class="size" alt="punta sal-img">
   <div class="pcards">
     <h5 class="card-title">Perú Punta Sal</h5>
     <p class="card-text">ubicada al norte del Perú, es una playa únicaa la cual llegan miles de turistas de todas partes del mundo. Se encuentra a sólo 25 minutos de Máncora, reconocida como el “Mejor Destino de Playa de Sudamérica”</p>
-    <a href="#" class="btn btn-primary">25% Off</a>
+    <a href="./pages/promos.html" class="btn btn-primary">25% Off</a>
   </div>
 </div>
 

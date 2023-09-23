@@ -30,9 +30,13 @@ body {
         display: flex;
         justify-content: space-between;
 
-        .leon{
-            border-radius: 27px;
-        }
+        
+            .leon{
+                border-radius: 27px;
+                display: flex;
+                justify-content: center;
+            }          
+    
         
 
 
@@ -51,6 +55,7 @@ body {
                 color: $text-color;
                 padding: 20px;
             }
+            
         }
 
         .barranav {
@@ -415,6 +420,10 @@ div.pie {
         grid-template-columns: 1fr;
         justify-content: center;
         text-align: center;
+
+        ul{
+            margin-right: 40px;
+        }
     }
 
     .vuelos-brasil {

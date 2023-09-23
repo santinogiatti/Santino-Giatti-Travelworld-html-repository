@@ -23,6 +23,8 @@ body header {
 }
 body header .leon {
   border-radius: 27px;
+  display: flex;
+  justify-content: center;
 }
 body header .menu {
   list-style: none;
@@ -382,6 +384,9 @@ div.pie {
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
+  }
+  .pie-pagina .grupo-1 ul {
+    margin-right: 40px;
   }
   .vuelos-brasil {
     background-size: 128%;
