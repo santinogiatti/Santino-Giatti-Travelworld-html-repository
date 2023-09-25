@@ -446,6 +446,10 @@ div.pie {
   justify-content: center;
   object-fit: cover;
 }
+.container-nosotros .img-ubi {
+  display: flex;
+  justify-content: center;
+}
 .container-nosotros h1 {
   text-align: center;
 }

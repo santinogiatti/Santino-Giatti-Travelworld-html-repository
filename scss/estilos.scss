@@ -30,13 +30,13 @@ body {
         display: flex;
         justify-content: space-between;
 
-            .leon{
-                border-radius: 27px;
-                display: flex;
-                justify-content: center;
-            }          
-    
-    
+        .leon{
+            border-radius: 27px;
+        }
+        
+
+
+        
         .menu {
             list-style: none;
             padding: 0;
@@ -441,10 +441,6 @@ div.pie {
     .img-ubi{
      height: 90px;  
     }
-}
-
-@media (max-width: 1150px){
-    
 }
 
 @media (min-width:1440px){
