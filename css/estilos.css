@@ -414,6 +414,9 @@ div.pie {
   .header {
     display: grid;
   }
+  .img-ubi {
+    height: 90px;
+  }
 }
 @media (min-width: 1440px) {
   .container-reg {
