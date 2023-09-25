@@ -30,13 +30,13 @@ body {
         display: flex;
         justify-content: space-between;
 
-        .leon{
-            border-radius: 27px;
-        }
-        
-
-
-        
+            .leon{
+                border-radius: 27px;
+                display: flex;
+                justify-content: center;
+            }          
+    
+    
         .menu {
             list-style: none;
             padding: 0;
@@ -51,6 +51,7 @@ body {
                 color: $text-color;
                 padding: 20px;
             }
+            
         }
 
         .barranav {
@@ -65,8 +66,6 @@ body {
         }
     }
 }
-
-
 
 .logo {
     img {
@@ -165,10 +164,15 @@ div.pie {
 
             h2{
                 color: $primary-color;
+                justify-content: center;
+                text-align: center;
             } 
              
             ul{
                 list-style: none;
+                justify-content: center;
+                text-align: center;
+                margin-right: 35px;
             }         
                 li a {
                     color: white;
@@ -212,6 +216,8 @@ div.pie {
     background-size: 100%;
     border-radius: 15px;
     margin-bottom: 40px;
+
+    
 }
 
 .cards {
@@ -231,6 +237,10 @@ div.pie {
     &:hover {
         transform: scale(1.05);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    button {
+        @include button-config();
     }
 }
 
@@ -415,6 +425,10 @@ div.pie {
         grid-template-columns: 1fr;
         justify-content: center;
         text-align: center;
+
+        ul{
+            margin-right: 40px;
+        }
     }
 
     .vuelos-brasil {
@@ -424,6 +438,13 @@ div.pie {
     .header {
         display: grid;
     }
+    .img-ubi{
+     height: 90px;  
+    }
+}
+
+@media (max-width: 1150px){
+    
 }
 
 @media (min-width:1440px){
@@ -446,10 +467,18 @@ div.pie {
 
 .container-nosotros {
     position: relative;
-    padding: 120px 0;
+    padding: 60px 0;
     margin: 75px;
     border-radius: 15px;
-
+    overflow: hidden; 
+    position: relative;
+    
+    .img-ubi{
+        display: flex;
+        justify-content: center;
+        object-fit: cover
+        
+    } 
 
     h1{
         text-align: center;
@@ -492,6 +521,8 @@ div.pie {
         border-color: #117a8b;
     }
 }
+
+
 
 /* contenido Promos */
  .promos-tittle {

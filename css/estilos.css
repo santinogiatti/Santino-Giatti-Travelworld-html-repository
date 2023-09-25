@@ -23,6 +23,8 @@ body header {
 }
 body header .leon {
   border-radius: 27px;
+  display: flex;
+  justify-content: center;
 }
 body header .menu {
   list-style: none;
@@ -129,9 +131,14 @@ div.pie {
 }
 .pie-pagina .grupo-1 .box2 h2 {
   color: rgb(163, 217, 182);
+  justify-content: center;
+  text-align: center;
 }
 .pie-pagina .grupo-1 .box2 ul {
   list-style: none;
+  justify-content: center;
+  text-align: center;
+  margin-right: 35px;
 }
 .pie-pagina .grupo-1 .box2 li a {
   color: white;
@@ -188,6 +195,21 @@ div.pie {
 .cards:hover {
   transform: scale(1.05);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.cards button {
+  margin-top: 20px;
+  background-color: #a14be2;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+.cards button:hover {
+  background-color: #5a0556;
+  color: white;
 }
 
 .nombre-empresa {
@@ -281,7 +303,7 @@ div.pie {
 }
 .contact-form button {
   margin-top: 20px;
-  background-color: #7438a5;
+  background-color: #a14be2;
   color: #000000;
   padding: 10px;
   border: none;
@@ -330,7 +352,7 @@ div.pie {
 }
 .container-reg form button {
   margin-top: 20px;
-  background-color: #7438a5;
+  background-color: #a14be2;
   color: #000000;
   padding: 10px;
   border: none;
@@ -383,11 +405,17 @@ div.pie {
     justify-content: center;
     text-align: center;
   }
+  .pie-pagina .grupo-1 ul {
+    margin-right: 40px;
+  }
   .vuelos-brasil {
     background-size: 128%;
   }
   .header {
     display: grid;
+  }
+  .img-ubi {
+    height: 90px;
   }
 }
 @media (min-width: 1440px) {
@@ -407,9 +435,16 @@ div.pie {
 /* nosotros pag */
 .container-nosotros {
   position: relative;
-  padding: 120px 0;
+  padding: 60px 0;
   margin: 75px;
   border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.container-nosotros .img-ubi {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
 }
 .container-nosotros h1 {
   text-align: center;
